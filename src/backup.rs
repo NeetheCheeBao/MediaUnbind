@@ -8,7 +8,7 @@ use winreg::enums::*;
 use winreg::{RegKey, RegValue};
 
 /// 备份目录名，位于程序所在目录下。
-const BACKUP_DIR: &str = "WinMediaUnbinBackup";
+const BACKUP_DIR: &str = "MediaUnbindBackup";
 /// 用户级文件关联所在的注册表路径。
 const USER_FILE_EXTS: &str = r"Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts";
 /// 多值字符串内部的分隔符。

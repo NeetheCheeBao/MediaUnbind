@@ -1,5 +1,5 @@
 [package]
-name = "WinMediaUnbind"
+name = "MediaUnbind"
 edition = "2021"
 
 [dependencies]

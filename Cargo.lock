@@ -3,7 +3,7 @@
 version = 4
 
 [[package]]
-name = "WinMediaUnbind"
+name = "MediaUnbind"
 version = "0.0.0"
 dependencies = [
  "native-windows-derive",

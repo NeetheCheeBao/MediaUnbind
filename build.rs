@@ -69,7 +69,7 @@ fn find_rc_toolkit() -> Option<String> {
 /// 读取 version.ini 中的程序名称与版本。
 /// 文件缺失或某项未填写时退回内置默认值，保证构建不中断。
 fn read_version_ini() -> (String, String) {
-    let mut name = String::from("WinMediaUnbind");
+    let mut name = String::from("MediaUnbind");
     let mut version = String::from("0.0.0");
 
     let manifest_dir = std::env::var("CARGO_MANIFEST_DIR").unwrap_or_default();

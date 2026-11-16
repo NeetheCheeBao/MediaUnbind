@@ -1,6 +1,6 @@
 <div align="center">
 <img src="res/icon.ico" width="128" alt="logo" />
-<h1>Win Media Unbind</h1>
+<h1>Media Unbind</h1>
 
 [![Rust](https://img.shields.io/badge/Language-Rust-orange.svg)](https://www.rust-lang.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-blue.svg)](https://www.microsoft.com/windows)
@@ -8,7 +8,7 @@
 
 </div>
 
-**WinMediaUnbind** 是一个基于 Rust 的轻量级 Windows 工具，一键解除 94 种视频、音频与播放列表格式的默认程序关联，并在解除前自动备份、随时可还原。
+**MediaUnbind** 是一个基于 Rust 的轻量级 Windows 工具，一键解除 94 种视频、音频与播放列表格式的默认程序关联，并在解除前自动备份、随时可还原。
 
 > **🎯 项目起源**
 > 影音格式被某些程序强行关联后，用户想按自己的偏好重新设置却处处受阻。本工具可以强行解除这些关联，把"用什么打开"的选择权还给用户。
@@ -27,7 +27,7 @@
 
 ## 💾 备份与恢复
 
-- **备份位置**：程序所在目录下的 `WinMediaUnbinBackup` 文件夹，不存在时自动创建。
+- **备份位置**：程序所在目录下的 `MediaUnbindBackup` 文件夹，不存在时自动创建。
 - **备份内容**：即将被删除的注册表键值，按原类型记录（`REG_SZ` / `REG_EXPAND_SZ` / `REG_MULTI_SZ` / `REG_DWORD` / `REG_QWORD` / `REG_BINARY` / `REG_NONE`）。
 - **恢复方式**：点击「恢复选项」→ 在列表中选择一份备份 → 点击「恢复此项」。
 
@@ -74,24 +74,24 @@ asx m3u m3u8 pls wvx wax wmx cue mpls mpl dpl xspf mpd
 
 本程序会删除注册表中的文件关联项，**修改注册表始终存在风险**。
 
-- 执行清理前，请先确认 `WinMediaUnbinBackup` 目录中已生成对应备份。
+- 执行清理前，请先确认 `MediaUnbindBackup` 目录中已生成对应备份。
 
 ## ⬇️ 下载使用
 
-[![Releases](https://img.shields.io/badge/Download-Releases-7C25FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NeetheCheeBao/WinMediaUnbind/releases)
+[![Releases](https://img.shields.io/badge/Download-Releases-7C25FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NeetheCheeBao/MediaUnbind/releases)
 
 ## 🛠️ 本地编译
 
 1. 克隆仓库
 
 ```bash
-git clone https://github.com/NeetheCheeBao/WinMediaUnbind.git
+git clone https://github.com/NeetheCheeBao/MediaUnbind.git
 ```
 
 或者
 
 ```bash
-gh repo clone NeetheCheeBao/WinMediaUnbind
+gh repo clone NeetheCheeBao/MediaUnbind
 ```
 
 2. 一键编译
@@ -103,7 +103,7 @@ gh repo clone NeetheCheeBao/WinMediaUnbind
 ## 📁 项目结构
 
 ```text
-WinMediaUnbind
+MediaUnbind
 |   .gitignore
 |   build.bat             # 一键编译脚本
 |   build.rs              # 构建脚本：注入版本常量、生成资源脚本、探测 rc.exe

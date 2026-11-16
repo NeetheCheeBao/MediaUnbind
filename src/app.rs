@@ -20,7 +20,7 @@ const TERMINAL_MARGIN: f64 = 1.5;
 /// 终端与按钮行之间的纵向间距，独立于按钮之间的横向间距。
 const TERMINAL_GAP: i32 = 16;
 
-const PROJECT_URL: &str = "https://github.com/NeetheCheeBao/WinMediaUnbind";
+const PROJECT_URL: &str = "https://github.com/NeetheCheeBao/MediaUnbind";
 
 /// 原生消息处理器需要一直存活，否则窗口拖动会失效。
 const DRAG_HANDLER_ID: usize = 0x0001_0001;
